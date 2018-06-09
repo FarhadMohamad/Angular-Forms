@@ -9,8 +9,6 @@ export class FormPageComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
 
 
 
