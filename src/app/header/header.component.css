@@ -1,0 +1,6 @@
+.ui.inverted.menu .item, .ui.inverted.menu .item > a:not(.ui){
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-weight: bold;
+
+
+}

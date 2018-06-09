@@ -1,0 +1,24 @@
+<div class="ui floating message" id="search">
+  <div class="ui container">
+    <div class="ui big fluid action input">
+      <input #inputSearch type="text" [placeholder]="holder" (keyup.enter)="search(inputSearch.value)"(blur)="search(inputSearch.value); inputSearch.value=''">
+
+      <div class="ui grid">
+        <div class="computer only tablet only row">
+          <button class="ui big blue right labeled icon button" type="submit" (click)="search(inputSearch.value)">
+            <i class="search icon"></i>
+            
+            <span class="search">Search</span>
+          </button>
+        </div>
+
+        <!-- This is for mobile view when the screen gets smaller -->
+        <div class="mobile only row">
+          <button class="ui big blue button" type="submit" (click)="search(inputSearch.value)">
+            <i class="search icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
